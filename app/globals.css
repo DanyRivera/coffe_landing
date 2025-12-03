@@ -127,6 +127,14 @@ body {
   height: 500px;
 }
 
+.bg-o7 {
+  background-image: url(/images/o6.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 @media (min-width: 768px) {
   .bg-o1, .bg-o2, .bg-o3, .bg-o4, .bg-o5, .bg-o6 {
     height: 500px;
