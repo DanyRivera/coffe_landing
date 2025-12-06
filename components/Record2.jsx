@@ -38,16 +38,16 @@ const Header = () => {
 
       <header>
         {/* bg-[#bba17b] */}
-        <div className="bg-[#2f1d0e] md:bg-transparent flex justify-between items-center py-4 px-8 md:px-16">
+        <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}  className="bg-[#2f1d0e] md:bg-transparent flex justify-between items-center py-4 px-8 md:px-16">
 
           <div className="flex items-center gap-5">
             <Image src="/images/coffe-header-mobil.svg" alt="Logo" width={40} height={40} className="md:w-10" /> 
-            <h1 className="text-white tracking-wider m-0 text-2xl font-bold md:text-xl">Dany Coffe</h1>
+            <h1 className="text-white tracking-wider m-0 text-base font-bold md:text-xl">Dany Coffe</h1>
           </div>
           
           <div className="">
             <svg onClick={() => setShowMenuMobil(true)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              strokeWidth={1.5} stroke="currentColor" className="size-8 text-white md:hidden">
+              strokeWidth={1.5} stroke="currentColor" className="md:size-8 size-5 text-white md:hidden">
               <path strokeLinecap="round" strokeLinejoin="round"
                 d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
             </svg> 
@@ -78,7 +78,7 @@ const Header = () => {
 
           </div>
 
-        </div>
+        </motion.div>
       </header>
 
 

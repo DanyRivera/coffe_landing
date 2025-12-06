@@ -28,12 +28,12 @@ const Gallery = () => {
 
     return (
         <section className="relative md:mt-14">
-            <div className="text-white pt-10 flex flex-col mx-14 gap-5">
-                <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="text-5xl font-bold text-center leading-14 md:text-7xl md:leading-20 md:w-4/5 md:mx-auto">Explore the journey of coffe, from farm to cup.</motion.h2>
-                <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="text-center text-xl leading-8 md:w-1/2 md:mx-auto">Explore the process -handpicked beans, expertly roasted, and brewed with passion. Witnedd the craftsmanship that brings our sig...</motion.p>
+            <div className="text-white pt-10 flex flex-col mx-5 md:mx-14 gap-5">
+                <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="text-4xl font-bold text-center leading-14 md:text-7xl md:leading-20 md:w-4/5 md:mx-auto">Explore the journey of coffe, from farm to cup.</motion.h2>
+                <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="text-center text-base md:text-xl leading-8 md:w-1/2 md:mx-auto">Explore the process -handpicked beans, expertly roasted, and brewed with passion. Witnedd the craftsmanship that brings our sig...</motion.p>
             </div>
 
-            <div className="flex items-center gap-5 justify-between m-14 md:hidden">
+            <div className="flex items-center gap-3 md:gap-5 justify-between my-14 mx-2 md:m-14 md:hidden">
                 <button onClick={back} className="bg-[#825122] text-white px-3 py-2 rounded-full">&larr;</button>
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} key={currentImage} className="relative w-[300px] h-[400px] md:w-96 md:h-96 overflow-hidden rounded-lg shadow-xl">
                     <Image

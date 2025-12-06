@@ -8,12 +8,14 @@ import Testimonials from "@/components/Testimonials";
 import WhyUs from "@/components/WhyUs";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import Record from "@/components/Record";
+import Record2 from "@/components/Record2";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
+      <Record2 />
+      <Record />
       <Offer />
       <About />
       <Decoration /> 
@@ -21,7 +23,7 @@ export default function Home() {
       <Testimonials />
       <WhyUs />  
       <CallToAction />
-      <Footer /> 
+      <Footer />
     </>
   );
 }

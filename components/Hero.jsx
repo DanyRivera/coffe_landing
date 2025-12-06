@@ -1,27 +1,26 @@
 'use client'
 
 import Image from "next/image"
-import { motion } from "motion/react"
 
 const Hero = () => {
     return (
         <section className='h-full relative z-0 md:px-20'>
             <div className="md:grid md:grid-cols-12 md:items-center ">
                 <div className="px-20 pt-10 flex flex-col gap-7 md:col-span-6 md:pl-14">
-                    <motion.h1 initial={{ opacity: 0 }} transition={{ duration: 0.8 }} animate={{ opacity: 1 }} className="text-white text-5xl font-bold leading-14 md:leading-18 md:w-full md:font-black md:text-7xl">Awaken Your  Senses With  Every Sip</motion.h1>
-                    <motion.p initial={{ opacity: 0 }} transition={{ duration: 0.8 }} animate={{ opacity: 1 }} className="text-white w-[80%] font-light md:text-sm md:w-2/3">Discover hand-roasted blends from sutainable farms across the globe</motion.p>
-                    <motion.button initial={{ opacity: 0 }} transition={{ duration: 0.8 }} animate={{ opacity: 1 }} className="bg-[#825122] text-white px-4 py-2 rounded md:w-1/3 md:text-sm">Shop Our Roast</motion.button>
+                    <h1 className="text-white text-5xl font-bold leading-14 md:leading-18 md:w-full md:font-black md:text-7xl">Awaken Your  Senses With  Every Sip</h1>
+                    <p className="text-white w-[80%] font-light md:text-sm md:w-2/3">Discover hand-roasted blends from sutainable farms across the globe</p>
+                    <button className="bg-[#825122] text-white px-4 py-2 rounded md:w-1/3 md:text-sm">Shop Our Roast</button>
 
                     <div className="flex flex-col gap-3 mt-5 md:flex-row md:gap-5">
-                        <motion.ul initial={{ opacity: 0 }} transition={{ duration: 0.8 }} animate={{ opacity: 1 }} className="flex">
+                        <ul className="flex">
                             <Image src="/images/people1.jpg" className="rounded-full" alt="star" width={45} height={45} />
                             <Image src="/images/people2.jpg" className="rounded-full -ml-3" alt="star" width={45} height={45} />
                             <Image src="/images/people3.jpg" className="rounded-full -ml-3" alt="star" width={45} height={45} />
                             <Image src="/images/people4.jpg" className="rounded-full -ml-3" alt="star" width={45} height={45} />
                             <Image src="/images/people5.jpg" className="rounded-full -ml-3" alt="star" width={45} height={45} />
                             <Image src="/images/people1.jpg" className="rounded-full -ml-3" alt="star" width={45} height={45} />
-                        </motion.ul>
-                        <motion.div initial={{ opacity: 0 }} transition={{ duration: 0.8 }} animate={{ opacity: 1 }} className="flex flex-col gap-1">
+                        </ul>
+                        <div className="flex flex-col gap-1">
                             <ul className="flex">
                                 <Image src="/images/star.svg" alt="star" width={20} height={20} />
                                 <Image src="/images/star.svg" alt="star" width={20} height={20} />
@@ -30,10 +29,10 @@ const Hero = () => {
                                 <Image src="/images/star.svg" alt="star" width={20} height={20} />
                             </ul>
                             <p className="text-white md:text-sm md:w-full">Loved by 1000+ customers</p>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
-                <motion.div className="md:col-span-6 md:w-[120%] md:pr-14" initial={{ opacity: 0, y: 100 }} transition={{ duration: 0.8 }} animate={{ opacity: 1, y: 0 }}>
+                <div className="md:col-span-6 md:w-[120%] md:pr-14">
                     <Image
                         src="/images/coffe-header-light.png"
                         alt="coffe"
@@ -41,11 +40,11 @@ const Hero = () => {
                         height={1000}
                         className="z-10 md:w-full"
                     />
-                </motion.div>
+                </div>
             </div>
 
             <div className="flex flex-col gap-10 justify-center items-center px-10 py-5 md:flex-row ">
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
+                <div className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
                     <div>
                         <Image src="/images/cup1.jpg" alt="cup" width={150} height={150} className="rounded-full" />
                     </div>
@@ -70,8 +69,8 @@ const Hero = () => {
                             </svg>
                         </div>
                     </div>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
+                </div>
+                <div className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
                     <div>
                         <Image src="/images/cup2.jpg" alt="cup" width={150} height={150} className="rounded-full" />
                     </div>
@@ -96,8 +95,8 @@ const Hero = () => {
                             </svg>
                         </div>
                     </div>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
+                </div>
+                <div className="bg-[#352112] flex items-center gap-7 p-5 rounded-2xl w-full">
                     <div>
                         <Image src="/images/cup3.jpg" alt="cup" width={150} height={150} className="rounded-full" />
                     </div>
@@ -122,11 +121,11 @@ const Hero = () => {
                             </svg>
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
 
-            <motion.img
-                initial={{ opacity: 0, x: 100 }} transition={{ duration: 0.8 }} animate={{ opacity: 1, x: 0 }}
+            <img
+                
                 src="/images/vector-hero.svg"
                 alt="vector"
                 width={500}

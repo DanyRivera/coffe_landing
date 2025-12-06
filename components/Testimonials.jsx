@@ -63,13 +63,13 @@ const Testimonials = () => {
   return (
     <section className='mt-32 relative'>
       <div className="text-white pt-10 flex flex-col mx-14 gap-5">
-        <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className='text-5xl font-bold text-center leading-14 md:text-7xl md:w-2/3 md:leading-18 md:mx-auto'>Explore the journey of coffe, from farm to cup.</motion.h2>
-        <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className='text-center text-xl leading-8 md:w-2/3 md:mx-auto'>Explore the process -handpicked beans, expertly roasted, and brewed with passion. Witnedd the craftsmanship that brings our sig...</motion.p>
+        <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className='text-3xl font-bold text-center leading-9 md:text-7xl md:w-2/3 md:leading-18 md:mx-auto'>Explore the journey of coffe, from farm to cup.</motion.h2>
+        <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} className='text-center text-base md:text-xl leading-6 md:leading-8 md:w-2/3 md:mx-auto'>Explore the process -handpicked beans, expertly roasted, and brewed with passion. Witnedd the craftsmanship that brings our sig...</motion.p>
       </div>
 
       <div>
 
-        <div className="flex justify-center my-10 py-10 bg-testimonials md:grid md:grid-cols-3 md:items-end md:px-20 md:gap-5">
+        <div className="flex justify-center w-full my-10 py-10 bg-testimonials md:grid md:grid-cols-3 md:items-end md:px-20 md:gap-5">
 
           {/* Back Testimonials */}
           <motion.div  className="bg-[#22170b] text-white w-2/3 rounded-2xl p-7 md:flex flex-col gap-7 items-center md:w-full hidden">
@@ -88,7 +88,7 @@ const Testimonials = () => {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} key={`current-${currentIndex}`} className="bg-[#22170b] text-white w-2/3 rounded-2xl p-7 flex flex-col gap-7 items-center md:w-full ">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ delay: 1 }} key={`current-${currentIndex}`} className="bg-[#22170b] text-white rounded-2xl py-7 px-2 md:p-7 flex flex-col gap-7 items-center w-full mx-3 md:mx-0 ">
 
             <Image
               src={testimonials[currentIndex].image}
